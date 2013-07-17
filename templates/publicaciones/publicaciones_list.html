@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load thumbnail%}
+{% block contenido %}
+
+
+<div class="pag-title">
+   <div class="row">
+      <div class="large-12 page-title columns">Publicaciones</div>
+   </div>
+</div>
+<div class="bg-single">
+<div class="row">
+<div class="large-12 bg-single columns">
+
+<div class="filtro">
+<div class="box-blue tabb"><a href="/publicaciones/desarrollo_comunitario/">Desarrollo comunitario</a></div>
+<div class="box-green tabb"><a href="/publicaciones/salud_medio_ambiente/">Salud y medio ambiente</a></div>
+<div class="box-purple tabb"><a href="/publicaciones/comision_mujer_ninez/">Comision de la mujer y la niñez</a></div>
+</div>    
+
+  <div class="pub-list">
+        {% for publicacion in object_list %}
+		  <div class="pub-view">
+        {% if publicacion.portada %}
+            {% thumbnail publicacion.portada "150x200" crop="1%" as img %}
+             <img src="/media/{{img}}">
+            {% endthumbnail %} 
+       {% else %}
+         <img src="http://placehold.it/150x200">
+      {% endif %}
+       <h2 class="pub-descripcion">
+        <a href="{{ publicacion.get_absolute_url }}">{{ publicacion.titulo }}</a><br>
+       {{ publicacion.fecha }}
+
+        </h2>
+      </div>
+    {% empty %}
+        <p>No hay publicacion</p>
+
+       {% endfor %}
+
+  </div>
+    
+</div>
+</div>
+</div>
+
+{% endblock %}
