@@ -1,81 +1,74 @@
 {% extends "base.html" %}
 {% load thumbnail %}
 
-{% block extra_js %}
-  <script>
-  $(function() { 
-    // Setup the player to autoplay the next track
-    var a = audiojs.createAll({
-      trackEnded: function() {
-        var next = $('ol li.playing').next();
-        if (!next.length) next = $('ol li').first();
-        next.addClass('playing').siblings().removeClass('playing');
-        audio.load($('a', next).attr('data-src'));
-        audio.play();
-      }
-    });
-    
-    // Load in the first track
-    var audio = a[0];
-        first = $('ol a').attr('data-src');
-    $('ol li').first().addClass('playing');
-    audio.load(first);
 
-    // Load in a track on click
-    $('ol li').click(function(e) {
-      e.preventDefault();
-      $(this).addClass('playing').siblings().removeClass('playing');
-      audio.load($('a', this).attr('data-src'));
-      audio.play();
-    });
-    
-  });
-</script>
-{% endblock extra_js %}
 
 {% load embed_video_tags %}
 
 {% block contenido %}
 <!--header -->  
-<div class="top-content">
+
 <div class="row">
   <div class="large-12 top-content columns">
 
-  <div class="large-8 columns">
+  <div class="large-12 columns">
     <div class="slide-img">
       <ul data-orbit>
       {% for obj in ultimas_destacadas %}
         {% for imagen in obj.fotos.all|slice:"1" %}
         <li>
-          {% thumbnail imagen.imagen "620x360" crop="10%" as img %}
+          {% thumbnail imagen.imagen "960x380" crop="10%" as img %}
             <img src="/media/{{img}}">
             <div class="orbit-caption"><a href="{{obj.get_absolute_url}}">{{obj.titulo}}</a></div> 
           {% endthumbnail %}
         </li>
         {% endfor %}
       {% empty %}
-        <li><img src="http://placehold.it/560x360"></li>
+        <li><img src="http://placehold.it/960x380"></li>
     {% endfor %}
      </ul>
     </div>
-  </div>
-  <div class="large-4 columns">
-    <h1 class="welcome">Bienvenidos a  Adic Nicaragua</h1>
-    <div class="text-welcome">
+
+    <div class="large-6 columns">
+      <h1 class="welcome">Bienvenidos a  Cesesma</h1>
+      <div class="text-welcome">
       {% for  obj in texto %}
           {{obj.texto|safe}}
       {% empty %}
           <p>No hay nada que mostrar</p>
       {% endfor %} 
+      </div>
     </div>
-  </div>
+
+    <div class="large-6 columns">
+
+      <span class="donacion">Como colaborar con Cesesma</span>
+      <div class="box-orange">Haz tu donacion</div>
+
+    </div>
+
+
 
   </div>
+  
   </div>
   </div><!--row top content  final -->  
-<div class="content">
+
 <div class="row">
-<div class="large-12 content columns">
+ 
+<div class="large-12 columns">
+
+ <div class="content">
+  <div class="large-12 icons-bar columns">
+  <span class="text-actores">Actores involucrados</span>  
+ <ul class="act-inv">
+   <li><img src="{{STATIC_URL}}img/familia.png">Familias</li>
+   <li><img src="{{STATIC_URL}}img/ninez.png">Niños y Niñas</li>
+   <li><img src="{{STATIC_URL}}img/comunidad.png">Lideres comunitarios</li>
+   <li><img src="{{STATIC_URL}}img/promotores.png">Red de promotores</li>
+   
+ </ul>
+  </div>
 
     <div class="large-4  columns">
     <div class="title-bar">Ultimas Noticias</div>
@@ -103,7 +96,7 @@
     </div>
     </div>
 
- <div class="large-6   columns">
+ <div class="large-6  columns">
 
     <div class="title-publicacion">Publicaciones</div>
     
@@ -142,9 +135,11 @@
   </div>
   
 </div>
+
+ </div>
 </div><!--large-12 content-principal  -->
-</div>
-</div>
+</div><!-- Content row-->
+
 <div class="content-pub">
 <div class="row">
 <div class="large-12 content-pub columns">
@@ -163,19 +158,7 @@
     </div>
   </div><!--large-7 videos -->    
   
-  <div class="large-5  columns">
-    <div class="title-bar-2">Ultimos audios</div>
-    <div class="audio-box">
-      <audio preload></audio>
-      <ol class="audio-player">
-        {% for obj in ultimos_audios %}
-            <li><a href="#" data-src="/media/{{obj.audio}}">{{obj.nombre}}</a></li>
-        {% empty %}
-        <li><a href="#" data-src="http://s3.amazonaws.com/audiojs/01-dead-wrong-intro.mp3">dead wrong intro</a></li>
-        {% endfor %}
-      </ol>
-    </div>
-  </div>
+ 
 
 </div><!--large-12 content- publicaciones --> 
 
