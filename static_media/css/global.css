@@ -136,7 +136,7 @@ h2{ font-size: 18px;}
 .orbit-caption a{ color: #fff; font-size: 14px;}
 .top-content{  }
 
-.welcome{ color:#1a2e2c; font-size: 14px;   }
+.welcome{ color:#1a2e2c; font-size: 16px; font-weight: bold;   }
 
 .text-welcome{font-size: 14px; text-align: justify; color: #1a2e2c; margin-bottom: 2em;}
 
@@ -150,25 +150,20 @@ h2{ font-size: 18px;}
 /**** front- news list ****/
 h2{ font-size: 18px;}
 
-.title-bar{ padding: 8px; background: #2a80b9;  margin-top: 10px; margin-bottom: 8px; 
-			color: #fff; font-weight: bold; float: left;  clear: both;
-			border-radius:2px 2px;
-			-webkit-border-radius:2px 2px ;
-			-moz-border-radius:2px 2px;}
+.title-bar{ color: #e77e23; font-weight: bold; font-size: 18px; }
 .news-post{  float: left; margin-bottom: 1em; }
-.list-news{ width: 450px; float: left;  border-bottom: #ecf0f1 solid 1px; margin-bottom: 10px;  }
-.title-news a { font-size: 14px; padding-top: 10px; color: #464749;  }
+.list-news{margin-bottom: 10px; float: left; padding: 2px;  }
+.title-news a { font-size: 14px; padding-top: 2px; color: #464749; float: left; width: 200px;  }
 .title-news a:hover{ color: #7f8c8d;}
-.img-news{ float: left; padding: 10px;}
-.text-news{ float: left; width: 300px; font-family: 'Open Sans', sans-serif; font-size: 12px;}
+.img-news{ padding: 10px 0 10px 0;}
+.text-news{ float: left; width: 230px; font-family: 'Open Sans', sans-serif; font-size: 12px;}
 .fecha-inicio{font-size: 10px; color:rgb(147, 154, 158);}
-.read-more{ float: left; margin-left: 20em;  background:#2a7eba; color: #fff; padding: 10px;
-			margin-bottom: 10px; }
+.read-more{  color:#9b9ca0; padding: 10px; float: right;}
 .no-more{ margin: 10px 0 10px 5px; clear: both; padding: 6px; text-decoration: underline;
 		   font-weight: bold;font-size: 12px; float: left;}
 .no-more a{ color: #7f8c8d;}
 .no-more a:hover{ color: #2c3e50;   }		  			
-.read-more a{color: #fff;}
+.read-more a{color:#9b9ca0;}
 .read-more a:hover{  text-decoration: underline; }
 .title-bar-2{ padding: 8px; background: #16a086;  margin-top: 10px; margin-bottom: 8px; 
 			color: #fff; font-weight: bold; float: left;
@@ -274,9 +269,14 @@ h2{ font-size: 18px;}
 
 /***Contenido portada ****/
 
-.text-actores{font-size: 14px; padding-bottom: 10px;}
+.text-actores{font-size: 16px;color: #e77e23; font-weight: bold;}
 .act-inv img { padding-right: 10px;}
-.act-inv li{ display: inline; padding: 2.5em; font-size: 14px;}
+.act-inv li{ display: inline; padding: 2.5em; font-size: 14px; font-weight: bold;}
+.donacion{font-size: 16px; font-weight:bold; color: #1a2e2c;}
+.cont-donacion{margin-bottom: 3em;}
+.icons-bar{margin-bottom: 3em;}
+
+
 /******Contenido portada ****/
 /****Contenido paginas internas****/
 .bg-single{ background: #fff; }
