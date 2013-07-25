@@ -15,7 +15,7 @@
 	
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="{% static 'js/vendor/custom.modernizr.js' %}"></script>
 
@@ -29,12 +29,12 @@
 <div class="row">
 <div class="large-12 top-header columns">
 <!--logo -->
-
+<a href="/"><div class="logo"></div></a>
 <!--logo -->
 
 	<div class="redes-front">
     <img src="/static/img/facebook.png">
-    <img src="/static/img/twitter.png">
+    <img src="/static/img/youtube.png">
     </div>
 
   <div class="large-4 search columns">
@@ -47,20 +47,13 @@
   </div>
 
 <!--Menu principal -->
+
 <div class="menu-principal">
 <nav class="nav alineado">
 	<ul class="nav-list">{% menu principal %}
 		{% for item in menuitems %}
 			<li  class="nav-item"><a href="{{ item.url }}" title="{{ item.title|escape }}"{% if item.current %} class='current'{% endif %}>{{ item.title }}</a></li>
 		{% endfor %}	
-	
-
-<a href="/"><div class="logo"></div></a>
-
-    {% menu principal2 %}
-        {% for item in menuitems %}
-            <li  class="nav-item"><a href="{{ item.url }}" title="{{ item.title|escape }}"{% if item.current %} class='current'{% endif %}>{{ item.title }}</a></li>
-        {% endfor %}    
    </ul>
 </nav>
 </div>
