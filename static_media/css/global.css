@@ -186,7 +186,7 @@ h2{ font-size: 18px;}
 /*post news list*/
 
 
-.video-box{ float: left; width: 200px; margin:0 10px 0 10px; padding:0 10px 0 10px; background: #fff; }
+.video-box{ float: left; width: 190px; margin:0 10px 0 10px; padding:0 10px 20px 10px; }
 .play-icon{ 
 			z-index: 25; position: absolute; margin-top: 2.5em; margin-left: 3.2em;}
 .video-sample{ background: #000; 
@@ -289,20 +289,21 @@ border-top: 2px solid #e57d24;  }
 .paginador{float: left; clear: both;}
 
 /**** eventos-front-page ****/
-.eventos{  }
-.box-event{ float: left; }
+.eventos{  float: left;  width: 320px; clear: right; margin-bottom: 50px; }
+.eventos-fronts{float: left; border-bottom: 1px solid #bdc3c7}
+.box-event{ float: left; margin-bottom: 10px; }
 h2 { line-height: 1em;}      
-.title-event a{ font-size: 14px; color: #5a5b5d; line-height: 1.0;  }           
-.descripcion{ font-size: 12px; margin: 3px; color: rgb(48, 64, 68);  }
-.text-title{ color: #2980b9; font-size: 16px;  margin-top: 10px; font-weight: bold; }
-.text-title-1{ color: #2980b9; font-size: 16px; margin-top: 10px; font-weight: bold; }
-.event-list{margin-top: 15px;  margin-bottom: 10px; }
-.texto-fecha{ font-size: 11px; color: #2980b9;}
-.text-event{ font-size: 12px;}
-.fecha-box{ background: #f3eded;}
-.calendar-icon-front{ float: right; clear: left;  margin-top: 10px; margin-right: 10px;
-				width: 18px; height: 18px; background: url(../img/clock.png);
-				padding-top: 15px; font-size: 9px;text-align: center; color: #5a5b5d;}
+.title-event a{ font-size: 12px; color: #000;  }           
+
+.text-title{ color: #2980b9; font-size: 16px;  margin-top: 10px; font-weight: bold; float: left; }
+.texto-fecha{ font-size: 11px; color: #fff; }
+.text-event{ font-size: 12px; }
+.fecha-box{ background: #9a9090;  width: 90px; float: left; height: 55px; padding-top: 1em; padding-left: 5px;
+			color: #fff; font-size: 11px; }
+.calendar-icon-front{ float: left;  margin-right:5px;
+				width: 25px; height: 25px; background: url(../img/clock.png);}
+.event-content{   background: #ecf0f1; color: #000; width: 230px; float: left;height: 55px;
+				padding-right: 10px; padding-left: 10px; }
 /**** eventos-front-page ****/ 
 
 
@@ -314,7 +315,7 @@ h2 { line-height: 1em;}
 			 border-radius:2px 2px;
 			-webkit-border-radius:2px 2px ;
 			-moz-border-radius:2px 2px; }
-.title-pub{ font-size: 12px; }
+.title-pub{ font-size: 13px; padding-top: 8px; }
 .title-pub a{color: #9d9d9d;}
 .pub-detail{ margin-right: 10px; float: left; margin-bottom: 2em;}
 .descargar{font-size:13px; font-family: 'Open Sans', sans-serif; padding-left: 5px; margin-top: 10px; }
