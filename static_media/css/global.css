@@ -1,5 +1,5 @@
 
-body { font-family: 'Open Sans', sans-serif;}
+body { font-family: 'Open Sans', sans-serif; }
 
 
 /**** Header ****/
@@ -28,14 +28,16 @@ ul.menu-rapido{margin: 0; padding: 0;}
 h2{ font-size: 18px;}
 
 /* Navigation styling */
-.menu-principal{  }
+.menu-principal{background: #cfcbc0; width: 100%; height: 40px; float: left; }
 .nav {
 	position:relative;
 	display:inline-block;
 	font-size:14px;
 	font-family: 'Open Sans', sans-serif;
+	margin-top: 10px;
 	margin-bottom: 10px;
 	font-weight:bold;
+
 }
 .nav-list li { list-style: none;
 	
@@ -47,7 +49,7 @@ h2{ font-size: 18px;}
 }
 .nav-item a {
 	display:block;
-	padding:12px 15px;
+	padding:2px 12px;
 	color:#fff;
 	
 }
@@ -174,14 +176,15 @@ h2{ font-size: 18px;}
 /**** front- news list ****/
 
 /*post news list*/
-.post-news{   float: left; margin-bottom: 15px; margin-right: 8px;}
-.list-post-news{ float: left;  margin-top: 20px; background: #ecf0f1;
-				 padding-top: 10px; padding-bottom: 10px;}
-.more-news{   background:#089342; color: #fff; padding: 5px;
-			margin-bottom: 10px; margin-right: 10px; margin-top: 10px; }
+.post-news{  margin-left: 20px; clear: both;  }
+.list-post-news{  float: left; margin: 10px; background: #f4f5f7; padding: 10px; }
+.img-news-list{float: left; margin-right: 15px;}
+.tlist-news{ padding-left: 10px;}
+.tlist-news a { font-size: 14px; padding-top: 2px; color: #464749; }
+.tlist-news a:hover{ color: #7f8c8d;}
+.more-news{  margin-top: 10px; float: left;  }
 .more-news:hover{color:#fff; background:rgb(15, 122, 50);}
-.news-post-list{ font-size: 13px; text-align: justify; 
-				 margin-bottom: 15px; padding-right: 10px;}
+.news-post-list{ }
 
 /*post news list*/
 
@@ -224,7 +227,7 @@ h2{ font-size: 18px;}
 .box-orange{ background: #e77e23; -webkit-border-radius: 8px; font-size: 16px;  width: 200px;
 			 font-weight: bold; text-align: center; margin-top: 1em;
 		     border-radius: 8px; padding: 1em;  color: #fff; border-bottom:#9d5211 6px solid;}
-
+.box-orange a{color: #fff;}
 .list-pub{float: left;}
 .multimedia-list{float: left;}
 .title-sidebar{ padding: 10px; background: #7e8c8d; margin-top: 10px; color: #fff; clear: both;}
@@ -273,6 +276,7 @@ h2{ font-size: 18px;}
 ul.act-inv  { margin-top: 2em;}
 .act-inv img { padding-right: 10px;}
 .act-inv li{ display: inline; padding: 2.5em; font-size: 14px; font-weight: bold; margin-top: }
+.act-inv li a{color:#000; }
 .donacion{font-size: 20px; font-weight:bold; color: #1a2e2c; font-family: 'Merriweather', serif;}
 .cont-donacion{margin-bottom: 2em;}
 .icons-bar{margin-bottom: 4em;}
