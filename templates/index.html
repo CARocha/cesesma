@@ -43,7 +43,7 @@
      <div class="large-4 cont-donacion columns">
 
       <span class="donacion"> Colabora con CESESMA</span>
-      <div class="box-orange">Haz tu donacion</div>
+      <div class="box-orange"><a href="#">Haz tu donacion</a></div>
      </div>
 
 
@@ -63,10 +63,10 @@
 
    
    <ul class="act-inv">
-     <li><img src="{{STATIC_URL}}img/familia.png">Familias</li>
-     <li><img src="{{STATIC_URL}}img/ninez.png">Niños y Niñas</li>
-     <li><img src="{{STATIC_URL}}img/comunidad.png">Lideres comunitarios</li>
-     <li><img src="{{STATIC_URL}}img/promotores.png">Red de promotores</li>
+     <li><img src="{{STATIC_URL}}img/familia.png"><a href="#">Familias</a></li>
+     <li><img src="{{STATIC_URL}}img/ninez.png"><a href="#">Niños y Niñas</a></li>
+     <li><img src="{{STATIC_URL}}img/comunidad.png"><a href="#">Lideres comunitarios</a></li>
+     <li><img src="{{STATIC_URL}}img/promotores.png"><a href="#">Red de promotores</a></li>
      
    </ul>
   </div>
@@ -128,7 +128,9 @@
         {% empty %}
             <p>No hay publicacion</p>
         {% endfor %}
-      
+      <div class="read-more">
+        <img src="{{STATIC_URL}}img/plus.png">
+        <a href="{% url 'publicaciones_lista' %}">Ver más</a></div>
     </div>
   <div class="large-7 columns">
     
@@ -143,6 +145,9 @@
                                 {% endvideo %}
       </div>
     {% endfor %}
+    <div class="read-more">
+        <img src="{{STATIC_URL}}img/plus.png">
+        <a href="{% url 'videos_lista' %}">Ver más</a></div>
     </div>
 
     <div class="title-bar">Proximos eventos</div>
@@ -161,7 +166,9 @@
         {% empty %}
             <p>No hay evento</p>
         {% endfor %}
-     
+     <div class="read-more">
+        <img src="{{STATIC_URL}}img/plus.png">
+        <a href="{% url 'evento_lista' %}">Ver más</a></div>
       </div>
 
   </div>

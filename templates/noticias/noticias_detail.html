@@ -35,7 +35,7 @@
 
 {% block contenido %}
 <div class="row">
-<div class="large-12 page-title columns">{{object.titulo}}</div>
+
 </div>
 <div class="bg-single">
 <div class="row">
@@ -43,6 +43,7 @@
  <div class="large-12 bg-single columns">
  
    <div class="large-9  columns">
+    <h1 class="single-title">{{object.titulo}}</h1>
      <div class="pg-single">
   <div id="slider1">
   	{% for imagen in object.fotos.all %}
@@ -73,20 +74,10 @@
    </div>
 
   <div class="large-3 columns">
-    <div class="title-sidebar">Noticias</div>
-
-    <div class="news-sidebar">
-      
-        
-      
-    {% for obj in noticias %}
-    <ul>
-     <li class="text-news-side"><a href="{{obj.get_absolute_url}}">{{obj.titulo}}</a></li>
-     </ul>
-    {% endfor %}  
-    <div class="read-more-side"><a href="/noticias/lista/">Leer m&aacutes</a></div>
-    
-    </div>
+    <h4 class="donacion">Como colaborar con CESESMA?</h4>
+    <div class="box-orange"><a href="#">Haz tu donacion</a></div>
+    <br>
+    <br>
     
     <div class="title-sidebar">Eventos</div>
     <div class="event-sidebar">

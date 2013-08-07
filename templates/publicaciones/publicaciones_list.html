@@ -3,20 +3,12 @@
 {% block contenido %}
 
 
-<div class="pag-title">
-   <div class="row">
-      <div class="large-12 page-title columns">Publicaciones</div>
-   </div>
-</div>
-<div class="bg-single">
-<div class="row">
-<div class="large-12 bg-single columns">
 
-<div class="filtro">
-<div class="box-blue tabb"><a href="/publicaciones/desarrollo_comunitario/">Desarrollo comunitario</a></div>
-<div class="box-green tabb"><a href="/publicaciones/salud_medio_ambiente/">Salud y medio ambiente</a></div>
-<div class="box-purple tabb"><a href="/publicaciones/comision_mujer_ninez/">Comision de la mujer y la niñez</a></div>
-</div>    
+
+<div class="row">
+<div class="large-9 columns">
+<h1 class="content-title">Publicaciones</h1>
+
 
   <div class="pub-list">
         {% for publicacion in object_list %}
@@ -42,7 +34,15 @@
   </div>
     
 </div>
+<div class="large-3 columns">
+  <h4 class="donacion">Como colaborar con CESESMA?</h4>
+    <div class="box-orange"><a href="#">Haz tu donacion</a></div>
+    <br>
+    <br>
+  
 </div>
+
 </div>
+
 
 {% endblock %}

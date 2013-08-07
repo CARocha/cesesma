@@ -35,15 +35,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
     height: 250px;
   }
 </style>
-<div class="row">
- <div class="large-12 page-title columns">{{object.titulo}}</div>
- </div class="bg-single"></div>
- <div class="bg-single ">
+
 <div class="row">
 
  <div class="large-12 columns">
 
   <div class="large-9  columns">
+    <h1 class="content-title">{{object.titulo}}</h1>
     <div class="pg-single">
         <div class="event-image">
         {% if object.fotos.all %}
@@ -73,7 +71,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   
    </div>
   
-  <div class="large-3 columns">
+  <div class="large-3 side-barc columns">
     <div class="title-sidebar">Noticias</div>
 
     <div class="news-sidebar">
