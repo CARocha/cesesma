@@ -22,7 +22,8 @@
       {% endif %}
        <h2 class="pub-descripcion">
         <a href="{{ publicacion.get_absolute_url }}">{{ publicacion.titulo }}</a><br>
-       {{ publicacion.fecha }}
+        <span class="fecha-list"> {{ publicacion.fecha }}</span>
+      
 
         </h2>
       </div>

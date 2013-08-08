@@ -4,15 +4,15 @@
 
 {% block contenido %}
 
-<div class="row">
- <div class="large-12 page-title columns">{{flatpage.title}}</div>
-</div>
-<div class="bg-single">
+
+
 <div class="row">
 
- <div class="large-12 bg-single columns">
+ <div class="large-12 columns">
+    
  
  <div class="large-9  columns">
+  <h1 class="single-title">{{flatpage.title}}</h1>
     <div class="pg-single">
       <div class="text-pages">
         {{flatpage.content|safe}}
@@ -22,6 +22,10 @@
 
  <div class="large-3 columns">
   <br>
+  <h4 class="donacion">Como colaborar con CESESMA?</h4>
+    <div class="box-orange"><a href="#">Haz tu donacion</a></div>
+    <br>
+    <br>
     <div class="box-green">
       <ul class="secondary-menu">
         {% for obj in menu_flat %}
@@ -31,8 +35,8 @@
         {% endfor %}
       </ul>
     </div>
+
     <br>
-    <div class="box-blue"><a href="/donantes/">Donantes</a></div>
     <div class="title-sidebar">Noticias</div>
     <div class="news-sidebar">
     {% for obj in noticias %}
@@ -44,5 +48,5 @@
   	</div>
  </div>
 </div>
-</div>	
+
 {% endblock contenido %}
