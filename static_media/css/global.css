@@ -4,7 +4,7 @@ body { font-family: 'Open Sans', sans-serif; }
 
 /**** Header ****/
 .alineado{ float: left; clear: left;  text-align: center;}
-.top-header{ background:#04843a;}
+.top-header{ background: url(../img/green-patter.jpg);}
 
 .line-header{width: 100%; background:#3d3e40; height: 8px;}
 .logo{  background: url(../img/logo.png) no-repeat; width: 147px; height: 152px; float: left;
@@ -47,7 +47,7 @@ h2{ font-size: 18px;}
 	font-weight:bold;
 
 }
-.nav-list li { list-style: none;
+.nav-list li { list-style: none;  border-right: 1px #29a05b dashed;
 	
 }
 .nav-item {
@@ -68,10 +68,9 @@ h2{ font-size: 18px;}
 	
 }
 .nav-item a:hover {
-	background:#29a05b;
-	color: #fff;
-	-webkit-border-radius: 4px; 
-	 border-radius: 4px;
+	color:#555555;
+	
+	
 }
 /* Mobile Navigation */
 .nav-mobile {
@@ -227,7 +226,7 @@ h4.cat-titles  {font-size:14px;}
 
 .pub-list{float: left; clear: both;}
 .pub-view{ float: left; margin: 14px;}
-.pub-descripcion{  font-size: 11px;}
+.pub-descripcion{  font-size: 11px; width: 150px; margin-top: 8px;}
 .pub-descripcion a{ color: #000;}
 /* page single*/
 
@@ -344,7 +343,8 @@ h2 { line-height: 1em;}
 			   font-weight: bold; padding: 10px 10px 0 10px; }
 .audio-playlist{ margin-bottom: 10px;background: #ecf0f1;  float: left; margin-right: 10px;}			   
 .audios-d{ margin-top: 10px;}			   
-
+.fecha-list{font-size: 10px; font-family: 'Open Sans', sans-serif; 
+			color: #e77e23; margin-top: 6px; float: left;}
 
 
 /**** footer ****/

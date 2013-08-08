@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% load thumbnail %}
 {% block contenido %}
-<div class="row">
-<div class="large-12 page-title columns">{{object.titulo}}</div>
-</div>
 
-<div class="bg-single">
+
+
 <div class="row">
   <div class="large-9  columns">
+    <h1 class="content-title">{{object.titulo}}</h1>
+    <br>
    <div class="pg-single">
   	<div class="small-block-3">
   	 <div class="pub-detail">
@@ -28,6 +28,13 @@
   </div>
   </div>
   <div class="large-3 columns">
+
+<h4 class="donacion">Como colaborar con CESESMA?</h4>
+    <div class="box-orange"><a href="#">Haz tu donacion</a></div>
+    <br>
+    <br>
+
+    
     <div class="title-sidebar">Noticias</div>
 
     <div class="news-sidebar">
@@ -52,7 +59,6 @@
     </div>
 
   </div>
-</div>
 </div>
  
 {% endblock contenido %}

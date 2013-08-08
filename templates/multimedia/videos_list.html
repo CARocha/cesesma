@@ -3,19 +3,13 @@
 {% load embed_video_tags %}
 {% block contenido %}
 
-  <div class="pag-title">
-    <div class="row">
-      <div class="large-12 page-title columns">Listas de videos</div>
-    </div>
-   </div>
   
-<div class="bg-single">
 
 <div class="row">
  <div class="large-12 bg-single columns">
 
    <div class="large-9 columns">
-     
+      <h1 class="content-title">Listas de videos</h1>
      <div class="list-videos">
       {% for obj in object_list %}
         <div class="video-sample">
@@ -61,5 +55,5 @@
 </div>
 {% endfor %}
 
-</div>
+
 {% endblock %}

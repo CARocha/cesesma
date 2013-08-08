@@ -33,13 +33,11 @@
 </script>
 {% endblock extra_js %}
 {% block contenido %}
-<div class="row">
-<div class="large-12 page-title columns">Multimedia</div>
-</div>
-<div class="bg-single">
+
+
 <div class="row">
    <div class="large-12  columns">
-
+ <h1 class="content-title">Multimedia</h1>
       <div class="title-bar">Ultimos videos</div>
       <div class="videos-lista">
         
@@ -77,7 +75,7 @@
    </div>
 
 </div>
-</div>
+
 
  {% for obj in ultimos_videos %}
   <div id="videoModal-{{obj.id}}" class="reveal-modal medium">
