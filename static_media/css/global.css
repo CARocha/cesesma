@@ -386,3 +386,6 @@ border-bottom-left-radius: 5px;}
 a.search-button  { color: #7f8c8d; font-size: 11px; border: none;}
 
 /**** footer ****/
+ul, ol {
+margin-left: 0;
+}
