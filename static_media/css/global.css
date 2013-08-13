@@ -231,7 +231,8 @@ h4.cat-titles  {font-size:14px;}
 /* page single*/
 
 /*** sidebar ***/
-.secondary-menu a{ color: #fff;}
+.secondary-menu a{ color: #000;}
+.box-green a{color:#000;}
 .box-orange{ background: #e77e23; -webkit-border-radius: 8px; font-size: 16px;  width: 200px;
 			 font-weight: bold; text-align: center; margin-top: 1em;
 		     border-radius: 8px; padding: 1em;  color: #fff; border-bottom:#9d5211 6px solid;}
