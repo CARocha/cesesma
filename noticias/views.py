@@ -8,6 +8,7 @@ from .forms import ContactForm
 from django.core.mail import send_mail
 from django.http import HttpResponse
 import json
+from tagging.models import Tag, TaggedItem
 
 
 def index(request, template='index.html'):
@@ -49,8 +50,12 @@ def multimedia(request, template='multimedia/multimedia.html'):
     return render(request, template, { 'ultimos_videos':ultimos_videos,  
                                      'ultimos_audios':ultimos_audios})
 
-def filtro_categoria(request,categoria,template='noticias/noticias_list.html'):
-    object_list = Noticias.objects.filter(categoria=categoria)
+def filtro_categoria(request,categoria1,template='noticias/noticias_list.html'):
+    try:
+        tag1 = Tag.objects.get(name=categoria1)
+    except:
+        tag1 = ''
+    object_list = TaggedItem.objects.get_union_by_model(Noticias, [tag1])
     return render(request, template, {'object_list':object_list})
 
 def contacto(request, template='contacto.html'):
@@ -66,8 +71,8 @@ def contacto_ajax(request):
             message = form.cleaned_data['mensaje']
             sender = form.cleaned_data['correo']
 
-            recipients = ['adic_asociacion@turbonett.com.ni',
-                          'crocha09.09@gmail.com']
+            recipients = ['coordinacion@cesesma.org',
+                                    'crocha09.09@gmail.com']
 
             send_mail(subject, message, sender, recipients)
             return HttpResponse( json.dumps( 'exito' ), mimetype='application/json' )
