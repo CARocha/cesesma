@@ -33,9 +33,10 @@
 <a href="/"><div class="logo"></div></a>
 <!--logo -->
 
-	<div class="redes-front">
+ <div class="redes-front">
+    <a href="/contactenos/"><img src="/static/img/mail3.png"></a>
     <img src="/static/img/facebook.png">
-    <img src="/static/img/youtube.png">
+    <a href="http://www.youtube.com/cesesma"><img src="/static/img/youtube.png"></a> 
     </div>
 
   <div class="large-4 search columns">
@@ -52,6 +53,7 @@
 <div class="menu-principal">
 <nav class="nav alineado">
 	<ul class="nav-list">{% menu principal %}
+                    <li  class="nav-item"><a href="/"><img src="/static/img/casa3.png" alt="inicio"></a></li>
 		{% for item in menuitems %}
 			<li  class="nav-item"><a href="{{ item.url }}" title="{{ item.title|escape }}"{% if item.current %} class='current'{% endif %}>{{ item.title }}</a></li>
 		{% endfor %}	
