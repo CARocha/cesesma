@@ -231,7 +231,10 @@ h4.cat-titles  {font-size:14px;}
 /* page single*/
 
 /*** sidebar ***/
-.secondary-menu a{ color: #000;}
+.secondary-menu li a{ color: #fff;}
+.secondary-menu li { background: #bec3c7; margin: 4px; 
+					padding: 15px; list-style: none; color: #fff; text-align: center;}
+.secondary-menu li:hover{ background: #3598db;}
 .box-green a{color:#000;}
 .box-orange{ background: #e77e23; -webkit-border-radius: 8px; font-size: 16px;  width: 200px;
 			 font-weight: bold; text-align: center; margin-top: 1em;
@@ -282,9 +285,16 @@ h4.cat-titles  {font-size:14px;}
 /***Contenido portada ****/
 
 .text-actores{font-size: 20px;color: #e77e23; font-weight: bold; font-family: 'Merriweather', serif; }
+
+.ninos-icon{ background: url(../img/ninez.png) no-repeat center; float: left; }
+.red-icon{ background: url(../img/promotores.png) no-repeat center; float: left; }
+.padres-icon{ background: url(../img/familia.png) no-repeat center; float: left; }
+.lideres-icon{background: url(../img/comunidad.png) no-repeat center; float: left; }
+.maestros-icon{ background: url(../img/maestros.png) no-repeat center; float: left; }
 ul.act-inv  { margin-top: 2em;}
 .act-inv img { padding-right: 10px;}
-.act-inv li{ display: inline; padding: 2.5em; font-size: 14px; font-weight: bold; margin-top: }
+.act-inv li{ display: inline; padding: 1.0em; font-size: 14px; font-weight: bold;
+			 float: left; clear: right; }
 .act-inv li a{color:#000; }
 .donacion{font-size: 20px; font-weight:bold; color: #1a2e2c; font-family: 'Merriweather', serif;}
 .cont-donacion{margin-bottom: 2em;}
