@@ -7,7 +7,7 @@ body { font-family: 'Open Sans', sans-serif; }
 .top-header{ background: url(../img/green-patter.jpg);}
 
 .line-header{width: 100%; background:#3d3e40; height: 8px;}
-.logo{  background: url(../img/logo.png) no-repeat; width: 147px; height: 152px; float: left;
+.logo{  background: url(../img/logo.png) no-repeat; width: 147px; height: 165px; float: left;
 		margin:10px 5px 0 10px; }
 .menu-rapido li a{  color: #fff; font-size: 14px; font-weight: bold; font-family: 'Bitter', serif; }
 .menu-rapido li a:hover{color: #222222;}
@@ -30,7 +30,7 @@ ul.menu-rapido{margin: 0; padding: 0;}
 h2{ font-size: 18px;}
 
 /* Navigation styling */
-.menu-principal{background: #fff; width: 100%; height: 40px; float: left;
+.menu-principal{background: #fff; width: 100%;  float: left;
 				-webkit-border-top-left-radius: 4px;
 				-webkit-border-top-right-radius: 4px;
 				-moz-border-radius-topleft: 4px;
@@ -55,6 +55,8 @@ h2{ font-size: 18px;}
 	*display:inline;
 	zoom:1;
 }
+
+.home a{ border:0; margin-top: 0;}
 .nav-item a {
 	display:block;
 	padding:2px 12px;
