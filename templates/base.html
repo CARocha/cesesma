@@ -55,8 +55,16 @@
 	<ul class="nav-list">{% menu principal %}
                     <li  class="nav-item"><a href="/"><img src="/static/img/casa3.png" alt="inicio"></a></li>
 		{% for item in menuitems %}
-			<li  class="nav-item"><a href="{{ item.url }}" title="{{ item.title|escape }}"{% if item.current %} class='current'{% endif %}>{{ item.title }}</a></li>
-		{% endfor %}	
+			<li  class="nav-item"><a href="{{ item.url }}" title="{{ item.title|escape }}" {% if item.current %} class='current' data-dropdown="drop1"{% endif %}>{{ item.title }}</a></li>
+		{% endfor %}
+
+        <ul id="drop1" class="f-dropdown" data-dropdown-content>{%submenu  submenuprincipal%}
+            {% for item in submenu_items %}
+                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}   
+        </ul>
+
+
    </ul>
 </nav>
 </div>
@@ -71,7 +79,7 @@
 	('__proto__' in {} ? '/static/js/vendor/zepto' : '/static/js/vendor/jquery') + 
 	'.js><\/script>') 
 </script> 
-
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="{% static 'js/foundation/foundation.js' %}"></script> 
 <script src="{% static 'js/foundation/foundation.alerts.js' %}"></script> 
 <script src="{% static 'js/foundation/foundation.clearing.js' %}"></script> 
@@ -127,5 +135,30 @@
 <script type="text/javascript">
 try{document.getElementsByName('googleSearchFrame')[0].height=900;}catch(e){}
 </script>
+<div id='IrArriba'>
+<a href='#Arriba'><span/></a>
+</div>
+<script type='text/javascript'>
+$(document).ready(function() {
+        $("#IrArriba").hide();
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+                $('#IrArriba').fadeIn();
+            } else {
+                $('#IrArriba').fadeOut();
+            }
+        });
+        $('#IrArriba a').on("click", function () {
+            $('html, body').animate({
+                scrollTop: 0}, 800);
+                return false;
+                console.log("di click aca");
+        });
+});
+
+});
+</script>
+
 </body>
 </html>
