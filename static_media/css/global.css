@@ -7,8 +7,8 @@ body { font-family: 'Open Sans', sans-serif; }
 .top-header{ background: url(../img/green-patter.jpg);}
 
 .line-header{width: 100%; background:#3d3e40; height: 8px;}
-.logo{  background: url(../img/logo.png) no-repeat; width: 147px; height: 165px; float: left;
-		margin:10px 5px 0 10px; }
+.logo{  background: url(../img/logo1.png) no-repeat;width: 147px; height: 172px; float: left;
+        margin:10px 5px 0 10px; }
 .menu-rapido li a{  color: #fff; font-size: 14px; font-weight: bold; font-family: 'Bitter', serif; }
 .menu-rapido li a:hover{color: #222222;}
 ul.menu-rapido{margin: 0; padding: 0;}
@@ -401,4 +401,17 @@ a.search-button  { color: #7f8c8d; font-size: 11px; border: none;}
 /**** footer ****/
 ul, ol {
 margin-left: 0;
+}
+
+#IrArriba {
+position: fixed;
+bottom: 30px; /* Distancia desde abajo */
+right: 30px; /* Distancia desde la derecha */
+}
+
+#IrArriba span {
+width: 60px; /* Ancho del botón */
+height: 60px; /* Alto del botón */
+display: block;
+background: url(http://lh5.googleusercontent.com/-luDGEoQ_WZE/T1Ak-gta5MI/AAAAAAAACPI/ojfEGiaNmGw/s60/flecha-arriba.png) no-repeat center center;
 }
